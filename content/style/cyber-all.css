@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+/* TELAS PEQUENAS */
+
+
+
+:root
+{
+    --study-color-01: var(--color-study-cyber-01);
+    --study-color-02: var(--color-study-cyber-02);
+    --study-color-03: var(--color-study-cyber-03);
+}
