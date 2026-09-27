@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../content/content/img/icon-akko.ico" type="image/x-icon">
+    <title>Window 11 Security Test</title>
+    <link rel="stylesheet" href="../content/content/style/global-all.css" media="all">
+    <link rel="stylesheet" href="../content/content/style/global-desktop.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="content/style/cyber-all.css" media="all">
+    <link rel="stylesheet" href="content/style/cyber-desktop.css" media="screen and (min-width: 600px)">
+</head>
+<body class="scroll">
+    <!-- PERSONAL PROJECT SOURCE -->
+    <!-- HEADER -->
+    <header>
+
+        <div>
+            <div id="container-waifu" class="icon">
+                <!-- PREVIOUS PAGE -->
+                <a href="pag-cyber-main.html" tabindex="1">
+                    <img src="../content/content/img/icon-button-back.png" alt="preview botton icon">
+                </a>
+            </div>
+
+            <div id="container-title">
+                <!-- PAGE TITLE -->
+                <div>
+                    <h1>How to know If your computer is being hacked!</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+
+            <div id="container-burge" class="icon">
+                <div tabindex="2">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="exercises-board-container">
+
+            <h1>Teste 1: Verificação com a ferramenta oculta do Windows (MRT)</h1>
+
+            <div class="exercises-board">
+                <h2></h2>
+                <p>O Windows possui uma ferramenta nativa chamada Malicious Software Removal Tool (MRT). Ela serve especificamente para buscar e remover malwares e cavalos de troia conhecidos que costumam dar acesso a hackers.</p>
+                <ol>
+                    <li>1. Pressione as teclas Windows + R no seu teclado ao mesmo tempo para abrir a caixa de diálogo Run.</li>
+                    <li>2. Digite exatamente <span class="code">mrt</span> (em letras minúsculas) e clique em OK (ou aperte Enter).</li>
+                    <li>3. Se o Windows pedir permissão de administrador (User Account Control), clique em Yes.</li>
+                    <li>4. Uma janela da ferramenta será aberta. Clique em Next.</li>
+                    <li>5. Selecione a opção Quick scan (Exame rápido) e clique em Next.</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="exercises-board-container">
+
+            <h1>Teste 2: Verificando Conexões de Rede Suspeitas (Netstat)</h1>
+
+            <div class="exercises-board">
+                <p>Se um hacker está controlando seu computador ou roubando dados, o PC precisa estar se comunicando com um servidor externo na internet. Vamos listar todas as conexões ativas agora.</p>
+                <p>Siga estes passos:</p>
+                <ol>
+                    <li>1. Clique na barra de pesquisa do Windows (ou aperte a tecla Windows)</li>
+                    <li>2. Digite cmd</li>
+                    <li>3. Quando aparecer Command Prompt, clique nele com o botão direito e selecione Run as administrator (Executar como administrador). Clique em Yes se o Windows pedir permissão.</li>
+                    <li>4. Na tela preta que se abrir, digite exatamente o comando abaixo e aperte Enter: <span class="code">netstat -ano</span></li>
+                    <li>5. Uma lista enorme de conexões vai aparecer na tela.</li>
+                </ol>
+                <p>O que fazer agora:</p>
+                <p>Tire um print ou foto da tela do Command Prompt mostrando as colunas que apareceram (especialmente as colunas Foreign Address e State) ou me diga se você notou algum endereço estranho repetido muitas vezes com a palavra ESTABLISHED na coluna State.</p>
+            </div>
+
+        </div>
+
+        <div class="exercises-board-container">
+
+            <h1>Teste 3: Verificar Programas Iniciando Sozinhos (Inicialização)</h1>
+
+            <div class="exercises-board">
+                <p>Muitos malwares e ferramentas de acesso remoto configuram-se para abrir automaticamente quando o Windows inicia. Passo a passo:</p>
+                <ol>
+                    <li>1. Pressione Ctrl + Shift + Esc para abrir o Gerenciador de Tarefas.</li>
+                    <li>2. Clique na aba Inicializar (Startup).</li>
+                    <li>3. Observe a lista de programas que iniciam junto com o Windows.</li>
+                    <li>4. Procure nomes estranhos, desconhecidos ou sem fabricante identificado.</li>
+                    <li>5. Preste atenção especial em itens com:</li>
+                    <li></li>
+                    <ul>
+                        <li>Fabricante "Desconhecido" (Unknown)</li>
+                        <li>Nomes aleatórios (ex.: xj28kd.exe, servicehostx.exe, etc.)</li>
+                        <li>Alto impacto na inicialização</li>
+                    </ul>
+
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="exercises-board-container">
+
+            <h1>Teste 4: Verificar Usuários e Administradores</h1>
+
+            <div class="exercises-board">
+                
+                <h2>Ver usuários existentes</h2>
+                <ol>
+                    <li>1. Clique em Start</li>
+                    <li>2. Digite cmd</li>
+                    <li>3. Clique com o botão direito em Command Prompt</li>
+                    <li>4. Selecione Run as administrator</li>
+                    <li>5. Execute:</li>
+                </ol>
+                <code>net user</code>
+                <p>Analise a lista. Verifique se existe alguma conta que você não reconhece.</p>
+                <h2>Ver quem tem privilégios de administrador</h2>
+                <p>Execute:</p>
+                <code>net localgroup Administrators</code>
+                <p>E também:</p>
+                <code>whoami</code>
+                <p>depois:</p>
+                <code>whoami /groups</code>
+            </div>
+
+        </div>
+
+        <div class="exercises-board-container">
+
+            <h1>Teste 100: Execute os comandos de reparo do sistema</h1>
+
+            <div class="exercises-board">
+                <p></p>
+                <ol>
+                    <li>1. </li>
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="exercises-board-container">
+
+            <h1>Teste 100: Execute os comandos de reparo do sistema</h1>
+
+            <div class="exercises-board">
+                <p></p>
+                <ol>
+                    <li>1. </li>
+                </ol>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+
+
+    <script src="cpp-content/script-source/script.js"></script>
+
+
+
+</body>
+</html>
