@@ -122,7 +122,7 @@
             <h1>Teste 4: Verificar Usuários e Administradores</h1>
 
             <div class="exercises-board">
-                
+
                 <h2>Ver usuários existentes</h2>
                 <ol>
                     <li>1. Clique em Start</li>
@@ -142,6 +142,261 @@
                 <code>whoami /groups</code>
             </div>
 
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 5: Verificar Processos em Execução</h1>
+            <div class="exercises-board">
+                <p>Malwares geralmente aparecem como processos desconhecidos consumindo recursos do computador.</p>
+                <ol>
+                    <li>1. Pressione Ctrl + Shift + Esc para abrir o Gerenciador de Tarefas.</li>
+                    <li>2. Abra a aba Detalhes.</li>
+                    <li>3. Organize a lista por CPU ou Memória.</li>
+                    <li>4. Procure nomes estranhos ou desconhecidos.</li>
+                    <li>5. Clique com o botão direito em um processo suspeito e escolha "Abrir local do arquivo".</li>
+                    <li>6. Investigue especialmente arquivos executados fora das pastas Program Files e Windows.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 6: Verificar Serviços Suspeitos</h1>
+            <div class="exercises-board">
+                <p>Ferramentas de acesso remoto maliciosas costumam criar serviços para permanecer ativos mesmo após reinicializações.</p>
+                <ol>
+                    <li>1. Pressione Windows + R.</li>
+                    <li>2. Digite services.msc e pressione Enter.</li>
+                    <li>3. Analise a lista de serviços instalados.</li>
+                    <li>4. Procure serviços com nomes estranhos ou sem descrição.</li>
+                    <li>5. Anote qualquer serviço que você não reconheça.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 7: Verificar Tarefas Agendadas</h1>
+            <div class="exercises-board">
+                <p>Malwares frequentemente utilizam tarefas agendadas para serem executados automaticamente.</p>
+                <ol>
+                    <li>1. Pressione Windows + R.</li>
+                    <li>2. Digite taskschd.msc.</li>
+                    <li>3. Pressione Enter.</li>
+                    <li>4. Navegue até Biblioteca do Agendador de Tarefas.</li>
+                    <li>5. Procure tarefas com nomes suspeitos ou que executem arquivos desconhecidos.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 8: Procurar Contas de Usuário Ocultas</h1>
+            <div class="exercises-board">
+                <p>Alguns invasores criam contas extras para manter acesso ao computador.</p>
+                <ol>
+                    <li>1. Abra o Prompt de Comando como Administrador.</li>
+                    <li>2. Execute: net user</li>
+                    <li>3. Anote todas as contas exibidas.</li>
+                    <li>4. Verifique se existe algum usuário que você não criou.</li>
+                    <li>5. Investigue qualquer conta desconhecida.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 9: Procurar Sessões Remotas Ativas</h1>
+            <div class="exercises-board">
+                <p>Este teste ajuda a descobrir se existe alguma sessão remota conectada ao computador.</p>
+                <ol>
+                    <li>1. Abra o Prompt de Comando como Administrador.</li>
+                    <li>2. Execute: query user</li>
+                    <li>3. Analise os usuários conectados.</li>
+                    <li>4. Verifique se há sessões desconhecidas.</li>
+                    <li>5. Anote qualquer conexão inesperada.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 10: Verificar Exclusões do Windows Defender</h1>
+            <div class="exercises-board">
+                <p>Malwares às vezes adicionam pastas às exclusões para evitar detecção.</p>
+                <ol>
+                    <li>1. Abra Segurança do Windows.</li>
+                    <li>2. Entre em Proteção contra vírus e ameaças.</li>
+                    <li>3. Clique em Gerenciar configurações.</li>
+                    <li>4. Role até Exclusões.</li>
+                    <li>5. Verifique se existem exclusões desconhecidas.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 11: Verificar Área de Trabalho Remota</h1>
+            <div class="exercises-board">
+                <p>O acesso remoto indevido pode ser realizado através do Remote Desktop.</p>
+                <ol>
+                    <li>1. Pressione Windows + R.</li>
+                    <li>2. Digite SystemPropertiesRemote.</li>
+                    <li>3. Pressione Enter.</li>
+                    <li>4. Verifique se a Área de Trabalho Remota está ativada.</li>
+                    <li>5. Se você não utiliza esse recurso, considere mantê-lo desativado.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 12: Verificar Programas Instalados Recentemente</h1>
+            <div class="exercises-board">
+                <p>Programas desconhecidos podem indicar instalações não autorizadas.</p>
+                <ol>
+                    <li>1. Abra Configurações.</li>
+                    <li>2. Entre em Aplicativos.</li>
+                    <li>3. Selecione Aplicativos Instalados.</li>
+                    <li>4. Organize a lista por Data de Instalação.</li>
+                    <li>5. Procure softwares que você não reconhece.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 13: Verificar Arquivo Hosts</h1>
+            <div class="exercises-board">
+                <p>Alguns malwares modificam o arquivo hosts para redirecionar sites legítimos.</p>
+                <ol>
+                    <li>1. Abra o Bloco de Notas como Administrador.</li>
+                    <li>2. Abra o arquivo:</li>
+                    <li>3. C:\Windows\System32\drivers\etc\hosts</li>
+                    <li>4. Verifique se existem linhas estranhas associadas a sites conhecidos.</li>
+                    <li>5. Pesquise qualquer entrada desconhecida.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 14: Verificar Extensões do Navegador</h1>
+            <div class="exercises-board">
+                <p>Extensões maliciosas podem monitorar atividades e capturar dados.</p>
+                <ol>
+                    <li>1. Abra o navegador.</li>
+                    <li>2. Entre na página de extensões.</li>
+                    <li>3. Analise todas as extensões instaladas.</li>
+                    <li>4. Remova aquelas que você não reconhece.</li>
+                    <li>5. Pesquise o nome das extensões suspeitas.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 15: Reparar Arquivos do Windows</h1>
+            <div class="exercises-board">
+                <p>Esse teste verifica se arquivos protegidos do Windows foram corrompidos ou alterados.</p>
+                <ol>
+                    <li>1. Abra o Prompt de Comando como Administrador.</li>
+                    <li>2. Execute: sfc /scannow</li>
+                    <li>3. Aguarde a conclusão da verificação.</li>
+                    <li>4. Verifique se o sistema encontrou e corrigiu problemas.</li>
+                    <li>5. Anote qualquer mensagem de erro exibida.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 16: Reparar a Imagem do Windows</h1>
+            <div class="exercises-board">
+                <p>Este teste verifica a integridade dos componentes internos do sistema operacional.</p>
+                <ol>
+                    <li>1. Abra o Prompt de Comando como Administrador.</li>
+                    <li>2. Execute: DISM /Online /Cleanup-Image /RestoreHealth</li>
+                    <li>3. Aguarde a conclusão do processo.</li>
+                    <li>4. Reinicie o computador.</li>
+                    <li>5. Execute novamente o comando sfc /scannow.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 17: Verificar o Caminho dos Serviços</h1>
+            <div class="exercises-board">
+                <p>Alguns malwares criam serviços falsos com nomes parecidos com serviços do Windows.</p>
+                <ol>
+                    <li>1. Pressione Windows + R.</li>
+                    <li>2. Digite msconfig e pressione Enter.</li>
+                    <li>3. Abra a aba Serviços.</li>
+                    <li>4. Clique com o botão direito em um serviço desconhecido.</li>
+                    <li>5. Abra o local do arquivo executável.</li>
+                    <li>6. Verifique se o arquivo está dentro de Windows, Program Files ou Program Files (x86).</li>
+                    <li>7. Investigue qualquer serviço executado em AppData, Temp ou Downloads.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 18: Verificar Compartilhamentos de Rede</h1>
+            <div class="exercises-board">
+                <p>Hackers podem criar compartilhamentos ocultos para acessar arquivos remotamente.</p>
+                <ol>
+                    <li>1. Abra o Prompt de Comando como Administrador.</li>
+                    <li>2. Execute: net share</li>
+                    <li>3. Analise todos os compartilhamentos listados.</li>
+                    <li>4. Ignore ADMIN$, C$ e IPC$.</li>
+                    <li>5. Investigue qualquer compartilhamento desconhecido.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 19: Verificar Conexões de Área de Trabalho Remota</h1>
+            <div class="exercises-board">
+                <p>Este teste mostra eventos relacionados a acessos remotos.</p>
+                <ol>
+                    <li>1. Pressione Windows + R.</li>
+                    <li>2. Digite eventvwr.msc.</li>
+                    <li>3. Abra Logs do Windows.</li>
+                    <li>4. Selecione Segurança.</li>
+                    <li>5. Procure eventos de logon que você não reconhece.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 20: Verificar Portas em Escuta</h1>
+            <div class="exercises-board">
+                <p>Programas maliciosos frequentemente criam portas para receber conexões externas.</p>
+                <ol>
+                    <li>1. Abra o Prompt de Comando como Administrador.</li>
+                    <li>2. Execute: netstat -abno</li>
+                    <li>3. Analise todas as entradas LISTENING.</li>
+                    <li>4. Identifique o executável associado.</li>
+                    <li>5. Pesquise qualquer processo desconhecido.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 21: Verificar Alterações no Registro de Inicialização</h1>
+            <div class="exercises-board">
+                <p>Malwares costumam utilizar o Registro do Windows para iniciar automaticamente.</p>
+                <ol>
+                    <li>1. Pressione Windows + R.</li>
+                    <li>2. Digite regedit.</li>
+                    <li>3. Navegue até:</li>
+                    <li>4. HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</li>
+                    <li>5. Analise os programas configurados para iniciar junto com o Windows.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="exercises-board-container">
+            <h1>Teste 22: Verificar Processos Assinados Digitalmente</h1>
+            <div class="exercises-board">
+                <p>Executáveis legítimos normalmente possuem assinatura digital válida.</p>
+                <ol>
+                    <li>1. Abra o Gerenciador de Tarefas.</li>
+                    <li>2. Localize um processo suspeito.</li>
+                    <li>3. Abra o local do arquivo.</li>
+                    <li>4. Clique com o botão direito no executável.</li>
+                    <li>5. Abra Propriedades e verifique a aba Assinaturas Digitais.</li>
+                </ol>
+            </div>
         </div>
 
         <div class="exercises-board-container">
